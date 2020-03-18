@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <title>Grid</title>
+</head>
+
+<style>
+h1{
+    background-color: #F0E9D7;
+    color:#4A5337;
+    padding: 1rem;
+}
+.btn{
+    background-color: #E07E55;
+    color: #F0E9D7;
+    padding: .5rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.slider{
+   background-image: url(images/flower.jpg);
+   background-size: cover;
+   padding: 2rem;
+   text-align: center;
+
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(300px, 1fr));
+    grid-gap:1rem;
+    justify-items: center;
+    background-color: #F4C8B0;
+}
+.service{
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.newsletter{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.location{
+    display: grid;
+    justify-self: center;
+}
+.contact{
+    display: grid;
+    justify-self: center;
+}
+.connect{
+    display: grid;
+    justify-self: center;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(300px, 1fr));
+    grid-gap:1rem;
+    justify-items: center;
+    background-color: #F0E9D7;
+}
+}
+</style>
+
+<body>
+<header>
+    <img src="images/logo1.png" width=300px>
+    <nav>
+        <a href="">Garden Center</a>
+        <a href="">Services</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+    </nav>
+</header>
+
+<div class="slider">
+    <h1>Title</h1>
+    <div class="btn">Learn More</div> 
+</div>
+
+<div class="services">
+    <div class="service">
+        <h1>Garden Center</h1>
+        <img src="">
+    </div>
+    <h1>Landscaping</h1>
+    <h1>Hardscaping</h1>
+</div>
+
+<div class="newsletter">
+    <p>
+        In need of a beautiful outdoor space?
+    </p>
+</div>
+
+<footer>
+<div class="location">
+    <h2>Location</h2>
+</div>
+<div class="contact">
+    <h2>Contact</h2>
+</div>
+<div class="connect">
+    <h2>Connect</h2>
+</div>
+</footer>
+
+</body>
+</html>
